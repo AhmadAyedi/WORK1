@@ -1,0 +1,16 @@
+Component	Arduino Pin
+LCD RS	11
+LCD E	9
+LCD D4	6
+LCD D5	5
+LCD D6	4
+LCD D7	3
+LCD VSS, RW, K	GND
+LCD VDD, A	5V
+Potentiometer (Middle Pin)	LCD V0 (Contrast)
+Push Button (One Side)	Pin 2
+Push Button (Other Side)	GND
+
+LCD Pin	Description	Connect to
+BLA	Backlight Anode (+)	5V
+BLK	Backlight Cathode (-)	GND
