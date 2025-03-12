@@ -14,15 +14,7 @@ uint8_t calculateParity(uint8_t id) {
     return id | p0 | p1;
 }
 
-// Function to calculate checksum
-// uint8_t calculateChecksum(uint8_t id, uint8_t* data, uint8_t length) {
-//     uint16_t sum = id;
-//     for (int i = 0; i < length; i++) {
-//         sum += data[i];
-//         if (sum > 0xFF) sum -= 0xFF; // Carry handling
-//     }
-//     return ~sum;
-// }
+
 uint8_t calculateChecksum(uint8_t id, uint8_t* data, uint8_t length) {
     uint16_t sum = id; // Start with the ID
 
@@ -94,3 +86,20 @@ void loop() {
 
     delay(2000); // Send every 2 seconds
 }
+
+
+
+
+
+
+
+
+// Function to calculate checksum
+// uint8_t calculateChecksum(uint8_t id, uint8_t* data, uint8_t length) {
+//     uint16_t sum = id;
+//     for (int i = 0; i < length; i++) {
+//         sum += data[i];
+//         if (sum > 0xFF) sum -= 0xFF; // Carry handling
+//     }
+//     return ~sum;
+// }
